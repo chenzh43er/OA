@@ -105,4 +105,11 @@ public interface WorkFlowService {
 	 * @return
 	 */
 	InputStream findImageInputStream(String deployementId, String imageName);
+
+	/**
+	 * 通过bussiness_key 查询task信息
+	 * @param bUSSINESS_KEY
+	 * @return
+	 */
+	Task findTaskByBussinessKey(String bUSSINESS_KEY);
 }

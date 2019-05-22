@@ -17,6 +17,7 @@ import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,6 +25,7 @@ import com.web.oa.pojo.ActiveUser;
 import com.web.oa.pojo.BaoxiaoBill;
 import com.web.oa.service.BaoxiaoService;
 import com.web.oa.service.WorkFlowService;
+import com.web.oa.utils.Constants;
 
 @Controller
 public class WorkFlowController {
@@ -220,4 +222,25 @@ public class WorkFlowController {
 	}
 	
 	//test Git version Control
+	
+	@RequestMapping("/viewCurrentImageByBill")
+	public String viewCurrentImageByBill(long billId,ModelMap model) {
+		
+		String BUSSINESS_KEY = Constants.BAOXIAO_KEY + "." + billId;
+		
+		Task task = this.workFlowService.findTaskByBussinessKey(BUSSINESS_KEY);
+		
+		//1：通过任务ID获取流程定义ID
+		ProcessDefinition pd = workFlowService.findProcessDefinitionByTaskId(task.getId());
+
+		model.addAttribute("deploymentId", pd.getDeploymentId());
+		
+		model.addAttribute("imageName", pd.getDiagramResourceName());
+		
+		Map<String, Object> map = workFlowService.findCoordingByTask(task.getId());
+		
+		model.addAttribute("acs", map);
+		
+		return "viewimage";
+	}
 }

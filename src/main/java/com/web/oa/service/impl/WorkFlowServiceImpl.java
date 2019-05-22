@@ -331,4 +331,13 @@ public class WorkFlowServiceImpl implements WorkFlowService {
 	public InputStream findImageInputStream(String deployementId, String imageName) {
 		return repositoryService.getResourceAsStream(deployementId, imageName);
 	}
+
+	/**
+	 * 通过bussiness_key 查询task信息
+	 * @param bUSSINESS_KEY
+	 * @return
+	 */
+	public Task findTaskByBussinessKey(String bUSSINESS_KEY) {
+		return taskService.createTaskQuery().processInstanceBusinessKey(bUSSINESS_KEY).singleResult();
+	}
 }
