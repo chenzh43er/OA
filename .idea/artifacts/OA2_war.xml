@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="OA2:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>OA2</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="OA2-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="OA2:war exploded" />
+    </root>
+  </artifact>
+</component>

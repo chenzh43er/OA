@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-factory-工厂设计模式/01-factory-工厂设计模式.iml" filepath="$PROJECT_DIR$/01-factory-工厂设计模式/01-factory-工厂设计模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-FactoryMethod-工厂方法设计模式/02-FactoryMethod-工厂方法设计模式.iml" filepath="$PROJECT_DIR$/02-FactoryMethod-工厂方法设计模式/02-FactoryMethod-工厂方法设计模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-abstractFactroy-抽象工厂设计模式/03-abstractFactroy-抽象工厂设计模式.iml" filepath="$PROJECT_DIR$/03-abstractFactroy-抽象工厂设计模式/03-abstractFactroy-抽象工厂设计模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-Singleton-单例设计模式/04-Singleton-单例设计模式.iml" filepath="$PROJECT_DIR$/04-Singleton-单例设计模式/04-Singleton-单例设计模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-abstractFactroy-抽象工厂设计模式/04-abstractFactroy.iml" filepath="$PROJECT_DIR$/03-abstractFactroy-抽象工厂设计模式/04-abstractFactroy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-Composite-组合设计模式/05-Composite-组合设计模式.iml" filepath="$PROJECT_DIR$/05-Composite-组合设计模式/05-Composite-组合设计模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-Prototype-原型设计模式/06-Prototype-原型设计模式.iml" filepath="$PROJECT_DIR$/06-Prototype-原型设计模式/06-Prototype-原型设计模式.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaGC/JavaGC.iml" filepath="$PROJECT_DIR$/JavaGC/JavaGC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWebApplication/JavaWebApplication.iml" filepath="$PROJECT_DIR$/JavaWebApplication/JavaWebApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MavenJavaWeb/MavenJavaWeb.iml" filepath="$PROJECT_DIR$/MavenJavaWeb/MavenJavaWeb.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,101 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OA2:war exploded">
+    <output-path>$PROJECT_DIR$/target/OA2-0.0.1-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>OA2</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OA2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-bpmn-converter-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-bpmn-layout-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-bpmn-model-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-camel-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-common-rest-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-cdi.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-cxf-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-diagram-rest-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-engine-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-explorer-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-json-converter-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-modeler-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-mule-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-osgi-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-rest-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-simple-workflow-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/activiti-spring-5.13.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/activiti5/commons-lang-2.4.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/commons-beanutils-1.8.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/ehcache-core-2.5.0.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/junit-4.9.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/log4j-1.2.17.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/quartz-1.6.1.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/shiro-core-1.2.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/shiro-ehcache-1.2.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/shiro-quartz-1.2.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/shiro-spring-1.2.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/shiro-web-1.2.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/slf4j-api-1.7.5.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/shiro-web/slf4j-log4j12-1.7.5.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/aopalliance-1.0.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/aspectjweaver-1.8.4.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/classmate-1.1.0.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-dbcp-1.2.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-codec-1.6.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-fileupload-1.3.1.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-io-1.3.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-lang3-3.3.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-logging-1.1.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-net-3.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/commons-pool-1.3.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/hibernate-validator-5.2.2.Final.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/httpclient-4.3.5.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/httpcore-4.3.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/jackson-annotations-2.4.0.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/jackson-core-2.4.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/jackson-databind-2.4.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/jboss-logging-3.1.0.CR2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/joda-time-2.5.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/jsqlparser-0.9.5.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/jstl-1.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/junit-4.9.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/log4j-1.2.16.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/mybatis-3.2.8.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/mybatis-paginator-1.2.15.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/mybatis-spring-1.2.2.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/ojdbc6-11.1.0.7.0.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/pagehelper-4.2.1.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/slf4j-api-1.6.4.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/slf4j-log4j12-1.6.4.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-aop-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-aspects-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-beans-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-context-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-core-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-expression-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-jdbc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-test-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-tx-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-web-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/spring-webmvc-4.1.3.RELEASE.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/ssm_all/validation-api-1.1.0.Final.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/fastjson-1.2.7.jar" />
+          <element id="file-copy" path="G:/Feiq/Recv Files/参考源码/OA项目/类库/mysql-connector-java-5.1.7-bin.jar" />
+          <element id="library" level="application_server_libraries" name="Tomcat 8.5.34" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/OA2-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="OA2/web/Web" />
+    </root>
+  </artifact>
+</component>
