@@ -83,7 +83,7 @@ public class AuctionServiceImpl implements AuctionService {
         Auction auction = auctionCustomerMapper.selectAuctionAndRecodList(record.getAuctionid());
 
         //1.判断当前点的时间是否过期
-        if(auction.getAuctionendtime().after(new Date())){
+        if(!auction.getAuctionendtime().after(new Date())){
             throw new CustomerException("当前拍卖已结束！！！");
         }
 
@@ -109,12 +109,14 @@ public class AuctionServiceImpl implements AuctionService {
 
     @Override
     public List<AuctionCustomer> findAuctionendtime() {
-        return null;
+        List<AuctionCustomer> auctionCustomers = this.auctionCustomerMapper.findAuctionendtime();
+        return auctionCustomers;
     }
 
     @Override
     public List<Auction> findAuctionNoendtime() {
-        return null;
+        List<Auction> auctions = this.auctionCustomerMapper.findAuctionNoendtime();
+        return auctions;
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.shop.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.shop.pojo.Auction;
+import com.shop.pojo.AuctionCustomer;
 import com.shop.pojo.Auctionrecord;
 import com.shop.pojo.User;
 import com.shop.service.AuctionService;
@@ -26,6 +27,13 @@ public class ActionController {
     @Autowired
     private AuctionService auctionService;
 
+    /**
+     * 查询所有的拍卖商品
+     * @param auction
+     * @param pageNum
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "queryAllAuctions")
     public String queryAllAuctions(@ModelAttribute("condition") Auction auction,
                                    @RequestParam(name="pageNum",required=false,defaultValue="1")int pageNum, Model model){
@@ -45,6 +53,12 @@ public class ActionController {
         return "index";
     }
 
+    /**
+     * 通过拍卖ID查询拍卖详情 并跳转至详情页面
+     * @param model
+     * @param auctionid
+     * @return
+     */
     @RequestMapping(value = "toAuctionDetail/{auctionid}")
     public String toAuctionDetail(Model model, @PathVariable int auctionid){
 
@@ -57,6 +71,13 @@ public class ActionController {
         return "auctionDetail";
     }
 
+    /**
+     * 保存竞拍记录 重定向至竞拍详情页面
+     * @param record
+     * @param session
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value = "saveAuctionRecord")
     public String saveAuctionRecord(Auctionrecord record, HttpSession session) throws Exception {
 
@@ -70,5 +91,27 @@ public class ActionController {
 
         Integer actionid =  record.getAuctionid();
         return "redirect:toAuctionDetail/"+actionid;
+    }
+
+    /**
+     * 跳转至拍卖结果界面
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = "toAuctionResult")
+    public String toAuctionResult(Model model){
+        //查询当前正在拍卖的商品以及拍卖成功的商品
+
+        //1.查看当前已经结束的竞拍
+        List<AuctionCustomer> auctionendtime = this.auctionService.findAuctionendtime();
+
+        //2.查看当前未结束的竞拍
+        List<Auction> auctionNoendtime = this.auctionService.findAuctionNoendtime();
+
+        model.addAttribute("endtimeList",auctionendtime);
+
+        model.addAttribute("noendtimeList",auctionNoendtime);
+
+        return "auctionResult";
     }
 }
